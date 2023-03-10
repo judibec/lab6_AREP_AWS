@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  sparklog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sparklog
+    ports:
+      - "35000:6000"
